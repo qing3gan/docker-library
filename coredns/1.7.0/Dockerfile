@@ -1,1 +1,1 @@
-FROM gcr.io/google_containers/coredns:1.7.0
+FROM k8s.gcr.io/coredns:1.7.0
