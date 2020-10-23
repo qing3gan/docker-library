@@ -18,6 +18,26 @@
 
 ## 查看gcr.io官方镜像
 
+
+### 新版本
+注意：kubeadm已改为使用`k8s.gcr.io`的镜像仓库。
+
+可以运行`kubeadm config list`查看安装Kubernetes所需的镜像。
+
+以Kubernetes v1.19.3为例：
+```bash
+k8s.gcr.io/kube-apiserver:v1.19.3
+k8s.gcr.io/kube-controller-manager:v1.19.3
+k8s.gcr.io/kube-scheduler:v1.19.3
+k8s.gcr.io/kube-proxy:v1.19.3
+k8s.gcr.io/pause:3.2
+k8s.gcr.io/etcd:3.4.9-1
+k8s.gcr.io/coredns:1.7.0
+```
+
+
+### 旧版本
+
 在科学上网的情况下，打开 https://console.cloud.google.com/gcr/images/google-containers/GLOBAL ，在右边的“过滤条件“中输入关键词来搜索。
 
 然后再选择正确的镜像。
@@ -27,6 +47,8 @@ gcr.io/google_containers/IMAGE_NAME:IMAGE_TAG
 
 比如： 
 gcr.io/google_containers/kube-apiserver-amd64:v1.10.3
+
+
 
 ## 使用阿里云镜像仓库构建镜像
 
