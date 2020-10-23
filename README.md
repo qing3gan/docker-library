@@ -22,9 +22,10 @@
 ### 新版本
 注意：kubeadm已改为使用`k8s.gcr.io`的镜像仓库。
 
-可以运行`kubeadm config list`查看安装Kubernetes所需的镜像。
+可以运行`kubeadm config images list`查看安装Kubernetes所需的镜像。
 
 以Kubernetes v1.19.3为例：
+
 ```bash
 k8s.gcr.io/kube-apiserver:v1.19.3
 k8s.gcr.io/kube-controller-manager:v1.19.3
